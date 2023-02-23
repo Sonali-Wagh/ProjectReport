@@ -1,0 +1,9 @@
+/* Remove default Bootstrap styling for active link */
+.nav-link.active {
+  background-color: transparent;
+}
+
+/* Align links to the right */
+.ml-auto {
+  margin-left: auto !important;
+}

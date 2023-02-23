@@ -1,0 +1,54 @@
+.bg-myRead{
+    background-color: rgba(216, 222, 223, 0.568);
+    height:45px;
+    display:flex;
+    top:1px;
+  }
+
+  .head{
+    align-items:center;
+    color:rgb(26, 90, 143);
+    font-weight:500;
+  }
+  
+  .content{
+    position:relative;
+    display:inline;
+    left:20%;
+  }
+
+  .slide{
+    display:none;
+    position:relative;
+    left:5%;
+  }
+
+  .info{
+   visibility:hidden;
+  }
+
+  @media(max-width:991px){
+    .slide{
+      visibility:visible;
+      display:inline-block;
+      color:rgb(26, 90, 143);
+      font-weight:500;
+      width:80%;
+      direction:"left"
+    }
+    .content{
+     display:none;
+    }
+      
+  .info{
+    visibility:visible;
+    position:relative;
+    color:rgba(255, 102, 0, 0.959);
+    right:3%;
+  }
+  }
+  .read-mr{
+    color:rgba(255, 102, 0, 0.959);
+    position:relative;
+
+  }

@@ -1,0 +1,283 @@
+/* CSS for first Navigation bar */
+.navbar{
+  width:100%;
+  display: flex;
+}
+.bg-lightgray{
+  background-color: rgba(216, 222, 223, 0.568);
+  height:40px;
+  width:100;
+  display: flex;
+}
+
+.brand{
+  position:absolute;
+  left:1%;
+  background-repeat: no-repeat;
+}
+
+.call-us{
+  font-size:1rem;
+  font-weight: 500;
+  padding-left: 0.2rem;
+  padding-right: 0.5rem;
+  flex-direction: column;
+  overflow-wrap:break-word;
+}
+
+.text{
+  position:absolute;
+  font-size: 12px;
+  top:12px;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.callUs{
+  position: absolute;
+  left:23%;
+}
+
+.liveChat{
+  position: relative;
+  left:30%;
+}
+
+a.liveChat{
+  display: inline-block;
+  border-radius: 10px;
+  cursor:pointer ;
+  padding: 5px 10px;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.liveChat .dotGreen{
+  background-color: #26d426;
+  height: 9px;
+  width:9px;
+  align-items: center;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+@keyframes up-right{
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100%{
+    transform: scale(1);
+    opacity: .25;
+  }
+}
+.blink{
+  -webkit-animation: up-right 1.2s infinite;
+  -moz-animation: up-right 1.2s infinite;
+  -o-animation: up-right 1.2s infinite;
+  animation: up-right 1.2s infinite;
+}
+.whatsApp{
+  display: none;
+  position: absolute;
+  left:86%;
+  bottom: 8px;
+  overflow: hidden;
+
+}
+
+@media (max-width:991px){
+  .whatsApp{
+    visibility: visible !important;
+    display: inline-block;
+  }
+}
+
+.right-menu{
+  position: relative;
+  left:9%;
+  align-items: center;
+  font-size: 15px;
+  justify-content: space-between;
+  padding-right: 5rem;
+margin-left: auto !important;
+}
+
+.right-menu a{
+  color: #000000 !important;
+ margin-left:1rem;
+}
+
+.btn{
+  position: relative;
+  height:40px;
+  width:180px;
+  left:38%;
+  background-color:#014579;
+  border-radius: 0 !important;
+}
+.dropdown-menu a{
+  color: #000 !important;
+  position: relative;
+  left:3%;
+  width:auto;
+  overflow: hidden;
+  justify-content: space-between;
+  display:block;
+
+}
+
+.underline-on-hover:hover{
+  text-decoration: underline;
+}
+
+ .dropdown btn:hover{
+  background-color: black;
+}
+.nav-item:hover .dropdown-menu{
+  display: table !important;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: table !important;
+}
+.dropdown-menu:hover .dropdown-item{
+display: table ;
+}
+
+.dropdown-menu a:hover{
+  color:#fa4e0f !important;
+} 
+
+
+
+/* CSS for Second Navigation bar */
+
+.bg-myRead{
+  background-color: rgba(216, 222, 223, 0.568);
+  height:45px;
+  top:1px;
+}
+
+.head{
+  align-items:center;
+  color:rgb(26, 90, 143);
+  font-weight:500;
+}
+
+.content{
+  position:relative;
+  display:inline;
+  left:20%;
+}
+
+.slide{
+  display:none;
+  position:relative;
+  left:5%;
+}
+
+.info{
+ visibility:hidden;
+}
+
+@media(max-width:991px){
+  .slide{
+    visibility:visible;
+    display:inline-block;
+    color:rgb(26, 90, 143);
+    font-weight:500;
+    width:80%;
+    direction:"left"
+  }
+  .content{
+   display:none;
+  }
+    
+.info{
+  visibility:visible;
+  position:relative;
+  color:rgba(255, 102, 0, 0.959);
+  left:8%;
+}
+}
+.read-mr{
+  color:rgba(255, 102, 0, 0.959);
+  position:relative;
+
+}
+
+/* CSS for Third Navigation bar */
+
+.bg-orange{
+  background-color: rgb(207, 68, 25);
+  height: 65px;
+  justify-content: space-between;
+  align-items:center;
+  top: fixed;
+}
+
+.chat-ico{
+  top:15px;
+  position:relative;
+  left:90%;
+  float:right;
+  display:none;
+}
+ 
+.logo{
+  position:relative;
+  left:0.3rem;
+}
+
+.menu{
+position:relative;
+float:right;
+left:4%;
+justify-content:space-around;
+display:inline-block;
+font-weight:bold;
+} 
+
+.login{
+  position:relative;
+  left:5%;
+}
+
+.menu a{
+  color:white !important;
+  margin-right: 8px;
+}
+
+.navbar-toggler{
+  position: relative;
+  right: 92%;
+  display: none;
+}
+@media(max-width:991px){
+  .navbar-toggler{
+  visibility: visible;
+  display: inline-block;
+  }
+
+  .bg-orange{
+    height:60px;
+    width:100%;
+  }
+  .flex-row{
+    display: none;
+  }
+  .chat-ico{
+    visibility: visible;
+    display: inline-block;
+  }
+  .logo{
+ padding-left: 0.5rem;
+  }
+}

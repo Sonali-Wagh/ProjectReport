@@ -1,0 +1,95 @@
+.bg-orange{
+  background-color: rgb(207, 68, 25);
+  height: 65px;
+  justify-content: space-between;
+  align-items:center;
+  top: fixed;
+}
+
+.chat-ico{
+  height: 15px;
+  width: 15px;
+  bottom:20px;
+  position:relative;
+  left:80%;
+  display:none;
+}
+ 
+.logo{
+  position:relative;
+  left:1rem;
+}
+
+.menu{
+float:right;
+position:relative;
+left:4%;
+justify-content:space-around;
+display:inline-block;
+font-weight:bold;
+} 
+
+.login{
+  position:relative;
+  left:5%;
+}
+
+.menu a{
+  color:white !important;
+  margin-right: 8px;
+}
+
+ .dropdown-menu a{
+  color:black ! important;
+  position: relative;
+  left: 3%;
+  width:auto;
+  overflow: hidden;
+  justify-content: space-between;
+  display: block;
+}
+.bg-light{
+  color:white
+}
+
+.nav-item:hover .dropdown-menu{
+  display: inline-block !important;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block !important;
+}
+
+@media(max-width:991px){
+  .navbar-toggler{
+    position: relative;
+    color: transparent;
+    right:91%;  
+  }
+
+  .bg-orange{
+    height:60px;
+    width:100%;
+  }
+  .flex-row{
+    display: none;
+  }
+  .chat-ico{
+    visibility: visible;
+    position: absolute;
+    bottom:55px;
+    height: 5px;
+    left:88%;
+    width:5px;
+    display: inline-block;
+  }
+  /* .navbar a{
+    color: black !important;
+    font-weight: 400;
+    display:inline-table;
+    justify-content: space-between;
+  } */
+  .logo{
+    padding-left:6rem;
+  }
+}
